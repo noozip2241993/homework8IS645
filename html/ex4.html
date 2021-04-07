@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 23</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/ex3.js">
+</head>
+
+<body>
+    <form>
+        <h1>Sample form</h1>
+        <p>
+            <label for="username">Name</label>:
+            <input type="text" name="username" id="username" required>
+            <span id="usernameHelp"></span>
+        </p>
+
+        <p>
+            <label for="emailAddress">Email</label>:
+            <input type="email" name="emailAddress" id="emailAddress" required placeholder="name@domain">
+            <span id="emailHelp"></span>
+        </p>
+        <p>Payment Type:</p>
+        <p>
+            <input type="radio" name="payment" id="cash" value="cash">
+            <label for="cash">Cash</label>
+            <br>
+            <input type="radio" name="payment" id="creditcard" value="creditcard">
+            <label for="creditcard">Credit Card</label>
+            <br>
+            <input type="radio" name="payment" id="googlepay" value="googlepay" checked>
+            <label for="googlepay">Google Pay</label>
+            <br>
+            <input type="radio" name="payment" id="applepay" value="applepay" checked>
+            <label for="applepay">Apple Pay</label>
+            <br>
+
+        </p>
+        <p>
+            <input type="checkbox" name="confirmation" id="confirmation">
+            <label for="confirmation">Sign me up for special promotions</label>
+        </p>
+
+        <p>
+            <label for="location">Preferred Location</label>:
+            <select name="location" id="location">
+                <option value="LA" selected>Los Angeles</option>
+                <option value="OC">Orange County</option>
+                <option value="R">Riverside</option>
+                <option value="SD">San Diego</option>
+            </select>
+        </p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </form>
+    <h2>Form Data Entered</h2>
+    <table id="data">
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <script src="../js/ex4.js"></script>
+</body>
+
+</html>
